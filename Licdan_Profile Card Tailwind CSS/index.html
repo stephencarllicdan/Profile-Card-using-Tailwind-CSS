@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Student Profile | Licdan, Stephen Carl M.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <style>
+      @keyframes shimmerScan {
+        0% {
+          transform: translateX(-100%);
+        }
+        50% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+      }
+
+      .animate-shimmer {
+        animation: shimmerScan 3s linear infinite;
+        mix-blend-mode: screen;
+      }
+
+      @keyframes fadeSlide {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in {
+        animation: fadeSlide 1.2s ease-out;
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-gradient-to-br from-[#0a0a1a] via-[#0f1220] to-[#1a1036] text-white flex items-center justify-center min-h-screen p-3"
+  >
+    <div
+      class="fade-in bg-[#111527]/90 backdrop-blur-md p-5 sm:p-6 rounded-3xl shadow-2xl w-[90%] sm:w-[340px] md:w-[400px] text-center transform transition-all duration-500 hover:scale-[1.03] hover:shadow-indigo-400/40"
+    >
+      
+      <div
+        class="relative w-24 h-24 sm:w-32 sm:h-32 mx-auto rounded-full overflow-hidden border-4 border-indigo-400 shadow-lg"
+      >
+        <img
+          src="74e29e8e-9361-4d50-865e-77a7803294e6.jpg"
+          alt="Profile Photo"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-transparent via-indigo-300/30 to-transparent animate-shimmer"
+        ></div>
+      </div>
+
+      
+      <h1 class="mt-4 text-xl sm:text-2xl font-bold text-indigo-300">
+        Licdan, Stephen Carl M.
+      </h1>
+
+      
+      <p class="mt-2 text-gray-300 text-sm px-2 leading-relaxed">
+        An IT student who enjoys coding and creating simple web designs.
+      </p>
+
+      
+      <div class="mt-4 flex justify-center space-x-6">
+        <a
+          href="https://www.facebook.com/poyetzniel.licdan"
+          target="_blank"
+          class="text-gray-400 hover:text-indigo-300 transition-all duration-300 text-xl hover:scale-110"
+        >
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/itsmepoyti"
+          target="_blank"
+          class="text-gray-400 hover:text-indigo-300 transition-all duration-300 text-xl hover:scale-110"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://github.com/stephencarllicdan"
+          target="_blank"
+          class="text-gray-400 hover:text-indigo-300 transition-all duration-300 text-xl hover:scale-110"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
